@@ -1,0 +1,1 @@
+# plugins-wp-hide-show-featured-image
