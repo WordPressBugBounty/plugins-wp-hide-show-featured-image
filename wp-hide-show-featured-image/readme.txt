@@ -2,8 +2,8 @@
 Contributors: galaxyweblinks
 Tags: featured, hide, image, post, show
 Requires at least: WordPress 4.5 or higher
-Tested up to: 6.6
-Stable tag: 2.3
+Tested up to: 6.7
+Stable tag: 2.4
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -20,6 +20,10 @@ Hide featured images from all posts and pages.
 Hide Admin Toolbar on user's end.
 Remove the “Howdy” text in the upper right corner of your admin dashboard.
 Remove the WordPress logo from the upper left corner of the admin bar.
+
+Here’s a link to the documentation for the plugin. This will help you learn more about its features and how to use it.
+<strong>[Documentation](https://wp-plugins.galaxyweblinks.com/wp-plugins/wp-hide-show-featured-image/doc/)</strong>
+For any feedback or queries regarding this plugin, please contact our [Support team](https://wp-plugins.galaxyweblinks.com/contact/).
 
 == Installation ==
 
@@ -56,6 +60,9 @@ Select the option (YES/NO) to remove the WordPress logo from the upper left corn
 
 == Changelog ==
 
+= 2.4 =
+- Stable Release
+
 = 2.3 =
 - Stable Release
 - Make it compatible with latest WordPress Version
@@ -74,6 +81,9 @@ Select the option (YES/NO) to remove the WordPress logo from the upper left corn
 First Stable Release
 
 == Upgrade Notice ==
+
+= 2.4 =
+- Stable Release
 
 = 2.3 =
 - Stable Release
