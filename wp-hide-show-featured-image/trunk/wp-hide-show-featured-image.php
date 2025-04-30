@@ -12,6 +12,7 @@ if (! defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
 
+
 // Register essential hooks 
 add_action('wp', 'whsfi_featured_image');
 add_action('admin_menu', 'whsfi_settings_menu');

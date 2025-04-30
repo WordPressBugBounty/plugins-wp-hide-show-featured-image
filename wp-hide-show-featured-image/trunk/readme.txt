@@ -16,6 +16,7 @@ To WP Hide Show Featured Image on a single post/page. Hide Admin Toolbar from th
 
 = Features =
 
+
 Hide featured images from all posts and pages.
 Hide Admin Toolbar on user's end.
 Remove the “Howdy” text in the upper right corner of your admin dashboard.
