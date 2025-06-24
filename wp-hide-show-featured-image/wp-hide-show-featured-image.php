@@ -3,7 +3,7 @@
   Plugin Name: WP Hide Show Featured Image
   Plugin URI: https://wordpress.org/plugins/wp-hide-show-featured-image/
   Description: To hide/show featured images on posts and pages. Hide Admin Toolbar from the user end, Remove the "Howdy" text in the upper right corner of your admin dashboard, Remove the WordPress logo from the upper left corner of the admin bar.
-  Version: 2.6
+  Version: 2.7
   Author: Galaxy Weblinks
   Author URI: https://www.galaxyweblinks.com
   License: GPLv2 or later
@@ -11,6 +11,7 @@
 if (! defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
+
 
 // Register essential hooks 
 add_action('wp', 'whsfi_featured_image');
@@ -133,11 +134,17 @@ function whsfi_settings_page()
 		<div class="notice whsfi--notice">
 			<div>
 				<h3><?php esc_html_e('WP Hide Show Featured Image', 'wp-hide-show-featured-image'); ?></h3>
-				<p><?php esc_html_e("Here's a link to the documentation for the plugin. This will help you learn more about its features and how to use it.", "wp-hide-show-featured-image"); ?></p>
+				<p><?php esc_html_e("Here's a link to the documentation for the plugin. This will help you learn more about its features and how to use it.", "wp-hide-show-featured-image"); ?>
+				</p>
 				<div class="e-notice__actions">
-					<a href="https://wp-plugins.galaxyweblinks.com/wp-plugins/wp-hide-show-featured-image/doc/" class="e-button--cta cta-secondary" target="_blank"><span>Documentation</span></a>
+					<a href="https://wp-plugins.galaxyweblinks.com/wp-plugins/wp-hide-show-featured-image/doc/"
+						class="e-button--cta cta-secondary" target="_blank"><span>Documentation</span></a>
+					<a href="https://wp-plugins.galaxyweblinks.com/wp-plugins/wp-hide-show-featured-image-pro/"
+						class="e-button--cta cta-primary" target="_blank" style="margin-left: 10px;"><span>View Pro
+							Features</span></a>
 				</div>
-				<p class="e-note">For any feedback or queries regarding this plugin, please contact our <a href="https://wp-plugins.galaxyweblinks.com/contact/" target="_blank">Support team</a>.</p>
+				<p class="e-note">For any feedback or queries regarding this plugin, please contact our <a
+						href="https://wp-plugins.galaxyweblinks.com/contact/" target="_blank">Support team</a>.</p>
 			</div>
 		</div>
 
