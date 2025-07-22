@@ -1,9 +1,9 @@
 === WP Hide Show Featured Image ===
 Contributors: galaxyweblinks  
-Tags: featured, hide, image, post, show, admin bar, toolbar, howdy, wordpress logo  
+Tags: featured, hide, image, post, show  
 Requires at least: 4.5  
 Tested up to: 6.8  
-Stable tag: 2.7 
+Stable tag: 2.8
 Requires PHP: 7.4  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -36,12 +36,20 @@ Pro Features:
 == Upgrade to Pro ==
 
 Unlock powerful customization with the **Pro version**:
-- Show/hide featured images based on device (desktop, tablet, mobile)  
+- Show/hide featured images based on device (desktop & mobile) 
 - Control featured image visibility on each individual post or page  
 - Hide admin toolbar based on specific user roles  
-- Priority support and regular feature updates  
+- Priority support and regular feature updates
 
-[Get WP Hide Show Featured Image Pro](https://wp-plugins.galaxyweblinks.com/wp-plugins/wp-hide-show-featured-image-pro/)
+
+**Important**: If you have the free version of **WP Hide Show Featured Image** installed, please deactivate and delete it before installing the Pro version.
+
+If your theme uses a custom method to display the featured image, this plugin may not function as expected. For best compatibility, ensure that your theme uses standard WordPress functions to display featured images.
+
+Please note that the plugin is currently **not compatible** with the Image widget in **page builders like Elementor, Divi Builder, WPBakery, or similar,** when used to dynamically display the featured image.
+
+
+[Get WP Hide Show Featured Image Pro](https://wp-plugins.galaxyweblinks.com/product/wp-hide-show-featured-image-pro/)
 
 == Installation ==
 
@@ -80,6 +88,9 @@ Go to settings and enable the option to hide the WordPress logo.
 
 == Changelog ==
 
+= 2.8 =  
+– Stable Release
+
 = 2.7 =  
 – Stable Release
 
@@ -110,6 +121,9 @@ Go to settings and enable the option to hide the WordPress logo.
 – First Stable Release
 
 == Upgrade Notice ==
+
+= 2.8 =  
+– Stable Release
 
 = 2.7 =  
 – Stable Release

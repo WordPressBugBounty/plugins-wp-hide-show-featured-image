@@ -3,7 +3,7 @@
   Plugin Name: WP Hide Show Featured Image
   Plugin URI: https://wordpress.org/plugins/wp-hide-show-featured-image/
   Description: To hide/show featured images on posts and pages. Hide Admin Toolbar from the user end, Remove the "Howdy" text in the upper right corner of your admin dashboard, Remove the WordPress logo from the upper left corner of the admin bar.
-  Version: 2.7
+  Version: 2.8
   Author: Galaxy Weblinks
   Author URI: https://www.galaxyweblinks.com
   License: GPLv2 or later
@@ -12,6 +12,22 @@ if (! defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
 
+if (!function_exists('is_plugin_active')) {
+    include_once ABSPATH . 'wp-admin/includes/plugin.php';
+}
+
+// Block activation if Pro is active
+add_action('activate_wp-hide-show-featured-image/wp-hide-show-featured-image.php', function () {
+    if (is_plugin_active('wp-hide-show-featured-image-pro/wp-hide-show-featured-image-pro.php')) {
+        deactivate_plugins(plugin_basename(__FILE__));
+
+        wp_die(
+            esc_html__('WP Hide Show Featured Image cannot be activated while its Pro version is active. Please deactivate its Pro version first.', 'wp-hide-show-featured-image'),
+            esc_html__('Plugin Activation Error', 'wp-hide-show-featured-image'),
+            ['back_link' => true]
+        );
+    }
+}, 1);
 
 // Register essential hooks 
 add_action('wp', 'whsfi_featured_image');
